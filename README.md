@@ -1,6 +1,6 @@
 # project-mid
-
-** Pembagian Project
+-------
+### Pembagian Project
 
 About Us : Berisi Profil Perusahaan ( Dafa Maulana )
 Contact Us : Berisi Profil Anggota kelompok ( Arifal Aqmal )
