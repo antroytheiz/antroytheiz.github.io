@@ -2,8 +2,8 @@
 -------
 ### Pembagian Project
 
-- About Us : Berisi Profil Perusahaan ( Dafa Maulana )
-- Contact Us : Berisi Profil Anggota kelompok ( Arifal Aqmal )
+- About Us : Berisi Profil Perusahaan ( @dafaumaulana )
+- Contact Us : Berisi Profil Anggota kelompok ( @arifalaqmal )
 - Our Product : Contoh Product yg dijual ( Theis Andatu )
 
 Good Luck
