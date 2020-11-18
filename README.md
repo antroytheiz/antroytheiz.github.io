@@ -1,9 +1,10 @@
-# project-mid
+# MID SEMESTER PROJECT
 -------
-### Pembagian Project
 
-- About Us : Berisi Profil Perusahaan ( @dafaumaulana )
-- Contact Us : Berisi Profil Anggota kelompok ( @arifalaqmal )
-- Our Product : Contoh Product yg dijual ( @antroytheiz )
+## Angota Kelompok
 
-Good Luck
+    - Dortheis Andatu - 05211940007003
+    - Arifal Akmal - 05211940000144
+    - M. Dafa Maulana - 05211940000141
+
+* Pemrograman Web - D
