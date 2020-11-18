@@ -1,13 +1,28 @@
 $(document).ready(function () {
     // membuat fungsi dari masing2 field input dan pesan errornya
     $('.error').hide();
-    $('.nama').focus(function () {
+    $('.namaDepan').focus(function () {
+        $(this).addClass('inputs');
+    });
+    $('.namaBelakang').focus(function () {
+        $(this).addClass('inputs');
+    });
+    $('.provinsi').focus(function () {
+        $(this).addClass('inputs');
+    });
+    $('.kabKota').focus(function () {
+        $(this).addClass('inputs');
+    });
+    $('.checkIn').focus(function () {
+        $(this).addClass('inputs');
+    });
+    $('.checkOut').focus(function () {
+        $(this).addClass('inputs');
+    });
+    $('.noTelp').focus(function () {
         $(this).addClass('inputs');
     });
     $('.alamat').focus(function () {
-        $(this).addClass('inputs');
-    });
-    $('.password').focus(function () {
         $(this).addClass('inputs');
     });
     $('.emailadd').focus(function () {
@@ -17,12 +32,59 @@ $(document).ready(function () {
     $('.errors').hide();
     $('.submit').click(function (event) { // fungsi dijalankan ketika user mengklik button submit
         // jika nama yang dimasukan panjangnya tidak lebih dari 0  maka akan menampilkan error selain itu akan disembunyikan
-        data = $('.nama').val();
+        data = $('.namaDepan').val();
         var len = data.length;
         if (len < 1) {
-            $('.nama').next().show();
+            $('.namaDepan').next().show();
         } else {
-            $('.nama').next().hide();
+            $('.namaDepan').next().hide();
+        }
+        data = $('.namaBelakang').val();
+        var len = data.length;
+        if (len < 1) {
+            $('.namaBelakang').next().show();
+        } else {
+            $('.namaBelakang').next().hide();
+        }
+        // jika provinsi yang dimasukan panjangnya tidak lebih dari 0  maka akan menampilkan error selain itu akan disembunyikan
+        data = $('.provinsi').val();
+        var len = data.length;
+        if (len < 1) {
+            $('.provinsi').next().show();
+        } else {
+            $('.provinsi').next().hide();
+        }
+        // jika kabKota yang dimasukan panjangnya tidak lebih dari 0  maka akan menampilkan error selain itu akan disembunyikan
+        data = $('.kabKota').val();
+        var len = data.length;
+        if (len < 1) {
+            $('.kabKota').next().show();
+        } else {
+            $('.kabKota').next().hide();
+        }
+        // jika noTelp yang dimasukan panjangnya tidak lebih dari 0  maka akan menampilkan error selain itu akan disembunyikan
+        data = $('.noTelp').val();
+        var len = data.length;
+        if (len < 1) {
+            $('.noTelp').next().show();
+        } else {
+            $('.noTelp').next().hide();
+        }
+        // jika checkIn yang dimasukan panjangnya tidak lebih dari 0  maka akan menampilkan error selain itu akan disembunyikan
+        data = $('.checkIn').val();
+        var len = data.length;
+        if (len < 1) {
+            $('.checkIn').next().show();
+        } else {
+            $('.checkIn').next().hide();
+        }
+        // jika CheckOut yang dimasukan panjangnya tidak lebih dari 0  maka akan menampilkan error selain itu akan disembunyikan
+        data = $('.checkOut').val();
+        var len = data.length;
+        if (len < 1) {
+            $('.checkOut').next().show();
+        } else {
+            $('.checkOut').next().hide();
         }
         // jika alamat yang dimasukan panjangnya tidak lebih dari 0  maka akan menampilkan error selain itu akan disembunyikan
         data = $('.alamat').val();
@@ -31,14 +93,6 @@ $(document).ready(function () {
             $('.alamat').next().show();
         } else {
             $('.alamat').next().hide();
-        }
-        // jika password yang dimasukan panjangnya tidak lebih dari 0  maka akan menampilkan error selain itu akan disembunyikan
-        data = $('.password').val();
-        var len = data.length;
-        if (len < 1) {
-            $('.password').next().show();
-        } else {
-            $('.password').next().hide();
         }
         // jika email yang dimasukan tidak valid formatnya maka akan menampilkan error dari email selain itu akan disembunyikan
         data = $('.emailadd').val();
@@ -60,13 +114,6 @@ $(document).ready(function () {
             }).show();
         } else {
             $('.errors').hide();
-        }
-        // jika countnya 0 maka akan menampilkan error dari option select departement selain itu akan disembunyikan
-        count = $('select option:selected').val();
-        if (count == 0) {  
-            $('.department').next().show();
-        } else {
-            $('.department').next().hide();
         }
         event.preventDefault();
         

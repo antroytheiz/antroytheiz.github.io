@@ -139,52 +139,98 @@
       <!--Page Body-->
       <div id="page-body" class="page-body">
         <section class="page-section one-child">
-          <form action="index.html" id="contact" method="post" >
+          <form action="" id="contact" method="post" >
             <div class="container">
               <div class="row checkout-customer_detail pt-5">
                 <div class="col-md-6 pb-50">
                   <h6 class="__title mb-35">INFORMASI PEMBELI</h6>
                   <div>
-                    <!-- Name -->
-                    <div class="form-group col-md-12">
-                        <input type="text" class="form-control nama" name="nama" placeholder="Nama">
-                        <span class="error">nama tidak valid/required</span>
+                    <!-- firstName -->
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control namaDepan" name="nama" placeholder="Nama Depan">
+                        <span class="error" style="color: red;">nama Depan tidak valid/required</span> <br><br>
+                    </div>
+                    <!-- lastName -->
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control namaBelakang" name="nama" placeholder="Nama Belakang">
+                      <span class="error" style="color: red;">nama Belakang tidak valid/required</span> <br><br>
                     </div>
                     <!-- Email -->
                     <div class="form-group col-md-12">
                         <input type="email" class="form-control emailadd" name="emailid" placeholder="Email">
-                        <span class="error">format email tidak valid/required</span>
+                        <span class="error" style="color: red;">format email tidak valid/required</span><br><br>
                     </div>
-                    <!--Password & Confirm Password -->
-                    <div class="form-group col-md-12">
-                        <input type="password" class="form-control password" name="password" placeholder="Password">
-                        <span class="error">password tidak valid/required</span>
-                    </div>
-                    
-                    <!-- Departement -->
-                    <div class="form-group col-md-12">
-                        <select id="department" name="website" class="form-control department">
-                          <option value="0" selected>Departement</option>
-                          <option value="SI">Sistem Informasi</option>
-                          <option value="IF">Informatika</option>
-                          <option value="TI">Teknologi Informasi</option>
-                        </select>
-                        <span class="error">department tidak valid/required</span>
-                      </div>
-                    <!-- Alamat -->
                     <div class="form-group col-md-12">
                         <textarea id="alamat" class="form-control alamat" name="alamat" placeholder="Alamat"></textarea>
-                        <span class="error">alamat tidak valid/required</span>
+                        <span class="error" style="color: red;">alamat tidak valid/required</span><br><br>
                     </div>
+                    <!-- Provinsi -->
+                    <div class="form-group col-md-12">
+                      <input type="text" class="form-control provinsi" name="nama" placeholder="Provinsi">
+                      <span class="error" style="color: red;">Provinsi tidak valid/required</span> <br><br>
+                    </div>
+                    <!-- Kab/Kota -->
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control kabKota" name="nama" placeholder="Kota / Kabupaten">
+                      <span class="error" style="color: red;">Kota/Kabupaten tidak valid/required</span> <br><br>
+                    </div>
+                    <!-- No.Telp -->
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control noTelp" name="nama" placeholder="No.Telp">
+                      <span class="error" style="color: red;">No.Telp tidak valid/required</span> <br><br>
+                    </div>
+                    <!-- Kab/Kota -->
+                    <div class="form-group col-md-6">
+                      <h4>Check In</h4>
+                      <input type="date" name="nama" required class="form-control checkIn"><br><br>
+                    </div>
+                    <!-- No.Telp -->
+                    <div class="form-group col-md-6">
+                      <h4>Check Out</h4>
+                      <input type="date" name="nama" required class="form-control checkOut"><br><br>
+                    </div>
+                    <!-- CreateAccount CHeckbox -->
                     <div class="col-md-12 ml-1">
-                        <input type="checkbox" value=5 class="chkb mr-2">Setuju S&K<br> 
-                        <span class="errors m-1">setuju s&k tidak valid/required</span>
-                    </div>
-                    <!-- Submit Button -->
-                    <div id="contact_submit">
-                        <button type="submit" class="btn btn-primary ml-5 pl-3 pr-3 text-center submit">Submit</button>
+                      <br>
+                        <input type="checkbox" value=5 class="chkb mr-2">&nbsp;&nbsp;<span class="font-serif-italic fz-6-s">Create an account</span> <br>
+                        <span class="errors m-1" style="color: red;">CreateAccount tidak valid/required</span> <br><br>
                     </div>
                   </div>                  
+                </div>
+                <div class="col-md-6 pb-50">
+                  <h6 class="__title mb-35">METODE PEMBAYARAN</h6>
+                  <div class="checkout-payment mb-55">
+                    <div class="bank-transfer">
+                      <div class="__title">
+                        <label>
+                          <input type="radio" name="payment" value="type1" checked="checked"/><span><i class="radio-button"></i><span>TRANSFER BANK LANGSUNG</span></span>
+                        </label>
+                      </div>
+                      <div class="__content">
+                        <p class="nmb">Lakukan pembayaran Anda langsung ke rekening bank kami. Harap gunakan ID Pesanan Anda sebagai referensi pembayaran. Pesanan Anda tidak akan dikirim sampai dana masuk ke akun kami.</p>
+                      </div>
+                    </div>
+                    <div class="cheque-payment">
+                      <div class="__title">
+                        <label>
+                          <input type="radio" name="payment" value="type2"/><span><i class="radio-button"></i><span>CHEQUE PAYMENT</span></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="paypal">
+                      <div class="__title">
+                        <label>
+                          <input type="radio" name="payment" value="type3"/><span><i class="radio-button"></i><span>PAYPAL</span></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <!-- Check Form -->
+                  <div id="contact_submit" class="col-md-6">
+                      <button type="submit" class="btn btn-dark ml-5 pl-3 pr-3 text-center submit">Check Form</button>
+                      <a href="confirm.html" class="btn btn-primary ml-5 pl-3 pr-3 text-center">Submit</a>
+                  </div>
                 </div>
               </div>
             </div>
