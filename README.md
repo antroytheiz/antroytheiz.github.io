@@ -1,7 +1,7 @@
 # MID SEMESTER PROJECT
 -------
 
-## Angota Kelompok
+## Anggota Kelompok
 
     - Dortheis Andatu - 05211940007003
     - Arifal Akmal - 05211940000144
