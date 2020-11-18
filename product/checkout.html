@@ -31,11 +31,18 @@
     <link href="http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic&amp;subset=latin,latin-ext,cyrillic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="assets/css"
     <link rel="stylesheet" href="../assets/fonts/megatron/styles.css">
     <!--Main stylesheet-->
     <link rel="stylesheet" href="../assets/css/main.css">
     <!--Modernizr js-->
     <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
+ 
+   
+    
+    
+    
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -176,10 +183,29 @@
                         <textarea id="alamat" class="form-control alamat" name="alamat" placeholder="Alamat"></textarea>
                         <span class="error">alamat tidak valid/required</span>
                     </div>
-                    <div class="col-md-12 ml-1">
-                        <input type="checkbox" value=5 class="chkb mr-2">Setuju S&K<br> 
-                        <span class="errors m-1">setuju s&k tidak valid/required</span>
-                    </div>
+                    <!--Tanggal Check In & Tanggal Check Out-->
+                    <div class="row">
+                      <div class="col-md-12">
+                       <div class="form-group">
+                        <label>Tanggal Check In</label>
+                          <input type="date" id="checkIn" name="Check In">
+                         </div> 
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                         <div class="form-group">
+                          <label>Tanggal Check Out</label>
+                            <input type="date" id="checkOut" name="Check Out">
+                           </div> 
+                          </div>
+                        </div>
+
+                        <div class="col-md-12 ml-1">
+                          <input type="checkbox" value=5 class="chkb mr-2">Setuju S&K<br> 
+                          <span class="errors m-1">setuju s&k tidak valid/required</span>
+                      </div>
+                    
                     <!-- Submit Button -->
                     <div id="contact_submit">
                         <button type="submit" class="btn btn-primary ml-5 pl-3 pr-3 text-center submit">Submit</button>
@@ -229,6 +255,7 @@
     <script type="text/javascript" src="../product/vaidation.js"></script>
     <!-- Google analytics-->
     <script type="text/javascript">(function(b,o,i,l,e,r){b.GoogleAsnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='../../www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create','UA-57387972-3');ga('send','pageview');</script>
+     
     <!--End Javascript Library-->
   </body>
 
