@@ -1,3 +1,4 @@
+// Pembuat: Dortheis Andatu - 05211940007003
 $(document).ready(function () {
     // membuat fungsi dari masing2 field input dan pesan errornya
     $('.error').hide();
